@@ -1,6 +1,7 @@
 // ITERATION 1
 
 // Suspects Collection
+const suspectsArray = [];
 const suspectsArray =[
 
     {
@@ -66,6 +67,7 @@ const suspectsArray =[
 ]
 
 // Rooms Collection
+const roomsArray = [];
 const roomsArray = [
     {name: "Dining Room"},
     {name: "Conservatory"},
@@ -85,6 +87,7 @@ const roomsArray = [
 ];
 
 // Weapons Collection
+const weaponsArray = [];
 const weaponsArray = [
     {name: "knife", weight: 8},
     {name: "candlestick", weight: 2},
@@ -116,7 +119,6 @@ function pickMystery() {
 function revealMystery(envelope) {
     return (`${envelope.suspect.firstName} ${envelope.suspect.lastName} killed Mr. Boddy using the ${envelope.weapon.name} in the ${envelope.room.name}!`); 
 }
-
 
 
 
